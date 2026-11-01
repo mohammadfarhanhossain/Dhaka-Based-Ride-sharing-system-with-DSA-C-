@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "C/C++: g++ build active file",
+            "command": "g++",
+            "args": [
+                "-std=c++11",
+                "-Wall",
+                "-Wextra",
+                "-g3",
+                "-O0",
+                "${fileDir}/*.cpp",
+                "-o",
+                "${fileDir}/sohojjatra.exe"
+            ],
+            "options": {
+                "cwd": "${fileDir}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "compiler: g++"
+        }
+    ]
+}
